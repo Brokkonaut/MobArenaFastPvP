@@ -68,8 +68,8 @@ public class MobArenaFastPvP extends JavaPlugin implements Listener {
             if (meta.hasAttributeModifiers()) {
                 return itemStack;
             }
-            meta.addAttributeModifier(Attribute.GENERIC_ATTACK_SPEED, new AttributeModifier(attackSpeedKey, 1.5, Operation.ADD_NUMBER, EquipmentSlotGroup.HAND));
-            meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, new AttributeModifier(attackDamageKey, addDamage, Operation.ADD_NUMBER, EquipmentSlotGroup.HAND));
+            meta.addAttributeModifier(Attribute.ATTACK_SPEED, new AttributeModifier(attackSpeedKey, 1.5, Operation.ADD_NUMBER, EquipmentSlotGroup.HAND));
+            meta.addAttributeModifier(Attribute.ATTACK_DAMAGE, new AttributeModifier(attackDamageKey, addDamage, Operation.ADD_NUMBER, EquipmentSlotGroup.HAND));
 
             itemStack.setItemMeta(meta);
         }
